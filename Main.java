@@ -23,6 +23,6 @@ class Main{
   }
 
   public static void Autores(){
-    System.out.println("\nAutores: \nMonserrat Bautista \nÁngel Isaid Martinez \nÁngel Jair Rosas \nChristian Sanchez.\n");
+    System.out.println("\nAutores: \nMonserrat Bautista \nÁngel Isaid Martinez \nAngel Rosas \nChristian Sanchez.\n");
   }
 }
