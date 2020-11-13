@@ -20,6 +20,9 @@ class Main{
     m1.Datos();
     System.out.println();
     m1.imprimirMatriz();
+    System.out.println();
+    m1.dosPrimerasFilas();
+     System.out.println("DETERMINANTE: "+m1.determinante2(matriz));
   }
 
   public static void Autores(){
