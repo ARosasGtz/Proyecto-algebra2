@@ -21,10 +21,10 @@ class Main{
     System.out.println();
     m1.imprimirMatriz();
     System.out.println();
-    System.out.println("DETERMINANTE: "+m1.determinante2(matriz));
+    System.out.println("La determinante de la matriz es: "+m1.determinante2(matriz));
   }
 
   public static void Autores(){
-    System.out.println("\nAutores: \nMonserrat Bautista \nÁngel Isaid Martinez \nAngel Rosas \nChristian Sanchez.\n");
+    System.out.println("\nProyecto de Algebra. \nAutores: \n-Monserrat Bautista \n-Ángel Isaid Martinez \n-Angel Rosas \n-Christian Sanchez.\n");
   }
 }

@@ -37,14 +37,13 @@ class Matriz{
     {
         det = (matriz[0][0]*matriz[1][1])-(matriz[1][0]*matriz[0][1]);
 
-        if(det==0){
+        /*if(det==0){
          System.out.print("La matriz NO es invertible\n");
-        }
+        }*/
         
         return det;
     }
-     
-    else{ 
+
       double suma=0;
 
       for(int i=0; i<matriz.length; i++){
@@ -64,18 +63,19 @@ class Matriz{
             }
           }
 
-        if(i%2==0)
+        if(i%2==0){
           suma+=matriz[i][0] * determinante2(nm);
-        else
+        }
+        else{
           suma-=matriz[i][0] * determinante2(nm);
       }
-
-      if(suma==0){
-        System.out.print("La matriz NO es invertible\n");
       }
+      
+      /*if(suma==0){
+        System.out.print("La matriz NO es invertible\n");
+      }*/
 
     return suma;
-    }
   }
 }
 
