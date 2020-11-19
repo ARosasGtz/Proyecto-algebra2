@@ -22,6 +22,9 @@ class Main{
     m1.imprimirMatriz();
     System.out.println();
     System.out.println("La determinante de la matriz es: "+m1.determinante2(matriz));
+    System.out.println("Los cofactores de la matriz son: "+m1.matrizCofactores(matriz));
+   /* System.out.println("Los cofactores de la matriz son: "+m1.cofactor(matriz,filas,columnas));
+   */
   }
 
   public static void Autores(){

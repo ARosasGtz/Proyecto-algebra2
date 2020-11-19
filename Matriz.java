@@ -48,7 +48,7 @@ class Matriz{
 
       for(int i=0; i<matriz.length; i++){
 
-      int [][] nm=new int [matriz.length-1][matriz.length-1];
+      int [][] nm = new int [matriz.length-1][matriz.length-1];
 
           for(int j=0; j<matriz.length; j++){
             if(j!=i){
@@ -76,8 +76,57 @@ class Matriz{
       }*/
 
     return suma;
+
+  
   }
+ /* public double cofactor(int matriz [][],int filas, int columnas){
+ 
+        int submatriz[][];
+        int n = matriz.length +1; //El detalle esta aqui
+ 
+        submatriz = new int[n][n];
+        int x = 0;
+        int y = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                if (i != filas && j != columnas) {
+                    submatriz[x][y] = matriz[i][j];
+                    y++;
+                    if (y >= n) {
+                        x++;
+                        y = 0;
+                    }
+                }
+            }
+        }
+  double m =(int)Math.pow(-1.0, filas + columnas) * determinante2(submatriz);
+        return m;
+  }*/
+  public double[][] matrizCofactores(int [][] matriz){
+        double[][] nm=new double[matriz.length][matriz.length];
+        for(int i=0;i<matriz.length;i++) {
+            for(int j=0;j<matriz.length;j++) {
+                int [][] det=new int [matriz.length-1][matriz.length-1];
+                double detValor;
+                for(int k=0;k<matriz.length;k++) {
+                    if(k!=i) {
+                        for(int l=0;l<matriz.length;l++) {
+                            if(l!=j){
+                                int indice1=k<i ? k : k-1 ;
+                                int indice2=l<j ? l : l-1 ;
+                                det[indice1][indice2]=matriz[k][l];
+                            }
+                        }
+                    }
+                }
+                detValor=determinante2(det);
+                nm[i][j]=detValor * (double)Math.pow(-1, i+j+2);
+            }
+        }
+      
+        return nm;
+    }
 }
 
 
-  
+
