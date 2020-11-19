@@ -123,10 +123,35 @@ class Matriz{
                 nm[i][j]=detValor * (double)Math.pow(-1, i+j+2);
             }
         }
-      
+
+        //imprimir cofactres de la matriz
+
+        System.out.println();
+        
+        System.out.println("Los cofactores de la matriz son:");
+
+        for (int a = 0; a < nm.length; a++) {
+            for (int b = 0; b < nm[a].length; b++) {
+                System.out.print(nm[a][b] + " ");
+            }
+            System.out.println();
+        }
         return nm;
     }
+
+
+   /* public void printMatriz(double[][] mat) {
+    for (int i = 0; i < mat.length; i++) {
+        for (int j = 0; j < mat[i].length; j++) {
+            System.out.print(mat[i][j] + " ");
+        }
+
+        System.out.println();
+    }
+*/
+  
 }
+
 
 
 
