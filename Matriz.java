@@ -124,7 +124,7 @@ class Matriz{
             }
         }
 
-        //imprimir cofactres de la matriz
+        //imprimir cofactores de la matriz
 
         System.out.println();
         
